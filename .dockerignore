@@ -1,0 +1,13 @@
+node_modules
+web/node_modules
+web/dist
+data
+data-test
+img
+Logs
+scripts
+.dist-stage
+*.zip
+*.fpk
+.git
+CLAUDE.md

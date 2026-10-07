@@ -1,0 +1,20 @@
+appname=vivixhuman
+version=1.0.0
+display_name=Vivix Human
+desc=Vivix Human 实时数字人应用：基于 Vivix 实时数字人 API 的 AI 伴侣对话系统——网页端实时音视频（TRTC 拉流，麦克风默认开启、边说边出字幕）、未开流时文字试聊（OpenAI 兼容模型）、按人物分组的聊天记录、人设引导构建与参考图上传的角色编辑器；右下角 AI女友 手机模型浮层全局常驻。免登录开箱即用，数据独立存储；先在「设置」页填 Vivix API Key 与本服务的公网 HTTPS 地址即可开始实时对话。源码：https://github.com/in1912/Human
+source=thirdparty
+platform=all
+
+maintainer=in1912
+maintainer_url=https://github.com/in1912/Human
+
+install_dep_apps=nodejs_v22
+
+service_port=7779
+desktop_uidir=ui
+desktop_applaunchname=vivixhuman.main
+
+ctl_stop=true
+disable_authorization_path=true
+
+changelog=v1.0.0：首个版本。数字人模块独立成应用：侧边栏直达 数字人界面 / 聊天记录 / 设置 / 角色设置 四页，右下角常驻 AI女友 悬浮按钮（手机模型浮层，打开即自动进入实时对话）。实时会话由服务端代理 Vivix API（Key 不出后端），浏览器 TRTC 拉流；未开流时走「设置 → 文字对话模型」配置的 OpenAI 兼容模型文字试聊。免登录，打开即用；数据独立一份（@appdata），与其它应用互不影响。

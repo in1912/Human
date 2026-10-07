@@ -1,0 +1,18 @@
+{
+  "name": "vivix-human",
+  "version": "1.0.0",
+  "description": "Vivix Human — 实时数字人独立应用（Vue3 + Express + node:sqlite，免登录开箱即用）",
+  "private": true,
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "dev": "node --no-warnings server/index.js",
+    "build:web": "cd web && npm install && npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^2.2.0"
+  }
+}

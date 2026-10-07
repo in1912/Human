@@ -1,0 +1,9 @@
+node_modules/
+web/node_modules/
+web/dist/
+data/
+data-test/
+Logs/
+.dist-stage/
+*.zip
+CLAUDE.md

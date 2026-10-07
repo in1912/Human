@@ -1,0 +1,17 @@
+#!/bin/bash
+# 安装完成：写一份 etc/vivixhuman.env（cmd/main 每次启动前 source）。
+# 本应用免登录、无管理员账号（内置本地账号由 server/db.js 的 ensureLocalUser 自动建），
+# 向导里没有必填项，这个文件眼下只是占位，将来加配置项时不必改 cmd/main。
+PKGETC="${TRIM_PKGETC:-/var/apps/vivixhuman/etc}"
+mkdir -p "$PKGETC"
+
+umask 077
+cat > "$PKGETC/vivixhuman.env" <<EOF
+# Vivix Human 应用配置（安装向导生成；可重复执行覆盖）
+# 当前无配置项——本应用免登录、无初始管理员（内置本地账号 'local' 由服务端自动创建）。
+# 数据目录：\$TRIM_PKGVAR/data（由 cmd/main 通过 DATA_DIR 注入）。
+EOF
+chmod 600 "$PKGETC/vivixhuman.env" 2>/dev/null
+
+echo "install_callback: 已写入 $PKGETC/vivixhuman.env（本应用免登录，无初始管理员）"
+exit 0

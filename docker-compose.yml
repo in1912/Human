@@ -1,0 +1,14 @@
+services:
+  vivix-human:
+    build: .
+    container_name: vivix-human
+    # 开机自启：Docker 服务启动时自动拉起容器
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - TZ=Asia/Shanghai
+    volumes:
+      # 数据持久化：SQLite 库与上传的参考图都在宿主机 data/ 目录
+      - ./data:/data

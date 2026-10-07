@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Vivix Human favicon：dashboard 四方块图标（Material Icons 同形），跟随明暗标签栏均可辨 -->
+  <style>
+    @media (prefers-color-scheme: dark) { .d { fill: #4f7cf7; } }
+  </style>
+  <path class="d" fill="#2d5fd9" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+</svg>

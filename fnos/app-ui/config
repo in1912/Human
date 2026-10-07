@@ -1,0 +1,14 @@
+{
+  ".url": {
+    "vivixhuman.main": {
+      "title": "Vivix Human",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "",
+      "gatewayPrefix": "/app/vivixhuman",
+      "gatewaySocket": "app.sock",
+      "url": "/app/vivixhuman",
+      "allUsers": true
+    }
+  }
+}

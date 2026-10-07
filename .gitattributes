@@ -1,0 +1,11 @@
+# 行尾纪律：fnos/cmd/* 与 start.command 是要在 Linux（fnOS）/ macOS 上跑的 bash，
+# 绝不能被 Windows 的 autocrlf 换成 CRLF（CRLF 的 bash 脚本在 NAS 上直接报错）。
+* text=auto
+fnos/cmd/* text eol=lf
+start.command text eol=lf
+*.sh text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+start.bat text eol=crlf
+*.png binary
+*.fpk binary
